@@ -11,15 +11,15 @@
 
 <script lang="ts">
 import Vue from 'vue';
-import { routes } from "./router";
-import Menu from "./components/Menu.vue";
+import { routes } from './router';
+import Menu from "../src/Menu.vue";
 
 export default Vue.extend({
   components: { 'router-menu': Menu },
-  data: function() {
-    return { routes }
-  }
-})
+  data: () => {
+    return { routes };
+  },
+});
 </script>
 
 

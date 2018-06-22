@@ -1,7 +1,7 @@
 import Vue from 'vue';
 import Router, { RouteConfig } from 'vue-router';
+
 import Home from './views/Home.vue';
-import About from './views/About.vue';
 
 import { HipsumRoute, TrumpsumRoute, HodorRoute, LoremRoute } from './views';
 
@@ -31,7 +31,7 @@ const routes: RouteConfig[] = [
 const router = new Router({
   mode: 'history',
   routes,
-  scrollBehavior: (to, from, savedPosition) => {
+  scrollBehavior: (to) => {
     if (to.hash) {
       return { selector: to.hash };
     }
